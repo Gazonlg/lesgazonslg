@@ -4,44 +4,121 @@
   <meta charset="UTF-8">
   <title>Les Gazons LG</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Font Propre -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      text-align: center;
       margin: 0;
-      padding: 0 20px;
+      padding: 0;
+      font-family: 'Outfit', sans-serif;
+      background-color: #0b0b0b;
+      color: #f0f0f0;
+      text-align: center;
     }
+
+    header {
+      background-color: #141414;
+      padding: 30px 0 20px;
+    }
+
     header img {
-      max-width: 200px;
-      margin-top: 20px;
+      max-width: 180px;
     }
-    h1, h2, h3 {
-      margin-top: 30px;
+
+    h1 {
+      margin: 10px 0;
+      font-size: 32px;
+      color: #66ff66;
     }
+
+    h2, h3 {
+      color: #a0ffa0;
+      margin-top: 40px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      gap: 20px;
+    }
+
     .gallery img {
-      width: 300px;
-      max-width: 90%;
-      margin: 10px;
-      border-radius: 5px;
-      border: 2px solid #333;
-    }
-    form input, form textarea {
+      max-width: 300px;
       width: 90%;
-      max-width: 400px;
-      margin: 5px;
-      padding: 10px;
+      border-radius: 8px;
+      border: 2px solid #33aa33;
+      box-shadow: 0 0 10px #222;
+      transition: transform 0.2s;
     }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    form {
+      margin: 30px auto;
+      max-width: 500px;
+      background-color: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #000;
+    }
+
+    form input, form textarea {
+      width: 95%;
+      margin: 10px 0;
+      padding: 12px;
+      border-radius: 6px;
+      border: 1px solid #444;
+      background-color: #0f0f0f;
+      color: #fff;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #33cc33;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #28a428;
+    }
+
     .map iframe {
       width: 100%;
       max-width: 600px;
       height: 350px;
       border: none;
-      margin: 30px auto;
+      margin-top: 30px;
+      border-radius: 10px;
     }
+
+    .social-buttons {
+      margin-top: 20px;
+    }
+
+    .social-buttons a {
+      display: inline-block;
+      margin: 8px 10px;
+      color: #66ff66;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
     footer {
-      margin-top: 40px;
+      margin-top: 60px;
       padding: 20px;
-      background-color: #f2f2f2;
+      background-color: #111;
+      color: #999;
+      font-size: 14px;
     }
   </style>
 </head>
@@ -55,15 +132,15 @@
 
   <h3>Contactez-nous</h3>
   <form action="mailto:lesgazonslg@hotmail.com" method="post" enctype="text/plain">
-    <input type="text" name="Nom" placeholder="Votre nom" required><br>
-    <input type="email" name="Email" placeholder="Votre courriel" required><br>
-    <textarea name="Message" rows="5" placeholder="Votre message" required></textarea><br>
+    <input type="text" name="Nom" placeholder="Votre nom" required>
+    <input type="email" name="Email" placeholder="Votre courriel" required>
+    <textarea name="Message" rows="5" placeholder="Votre message" required></textarea>
+    <br>
     <button type="submit">Envoyer</button>
   </form>
 
-  <h3>Suivez-nous</h3>
   <div class="social-buttons">
-    <a href="https://www.facebook.com/share/p/1FW1lppSGj/?mibextid=wxdk1f" target="_blank">👍 Aimer sur Facebook</a><br>
+    <a href="https://www.facebook.com/share/p/1FW1lppSGj/?mibextid=wxdk1f" target="_blank">👍 Aimer sur Facebook</a>
     <a href="https://www.facebook.com/share/p/1FW1lppSGj/?mibextid=wxdk1f" target="_blank">➡️ Suivre sur Facebook</a>
   </div>
 
@@ -76,19 +153,7 @@
     <img src="image13.jpeg" alt="Réalisation 9">
   </div>
 
+  <h3>Nous localiser à Salaberry-de-Valleyfield</h3>
   <div class="map">
-    <h3>Nous localiser à Salaberry-de-Valleyfield</h3>
     <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27765.40183201244!2d-74.13914130000001!3d45.2503656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cccfab3fef467ff%3A0x15de3f60fd16a1f7!2sSalaberry-de-Valleyfield%2C%20QC!5e0!3m2!1sfr!2sca!4v1722100000000" 
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-  </div>
-
-  <footer>
-    <p>&copy; 2025 Les Gazons LG. Tous droits réservés.</p>
-  </footer>
-
-</body>
-</html>
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27765.40183201244!2d-74.13914130000001!3d45.2503656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m
