@@ -4,12 +4,31 @@
   <meta charset="UTF-8">
   <title>Les Gazons LG</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Google Font Propre -->
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600&display=swap" rel="stylesheet">
   <style>
+    /* TOP BAR */
+    .topbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #33aa33;
+      color: #000;
+      font-weight: bold;
+      text-align: center;
+      padding: 10px 0;
+      z-index: 1000;
+      font-size: 16px;
+    }
+
+    .topbar a {
+      color: #000;
+      text-decoration: none;
+    }
+
     body {
       margin: 0;
-      padding: 0;
+      padding: 60px 20px 0;
       font-family: 'Outfit', sans-serif;
       background-color: #0b0b0b;
       color: #f0f0f0;
@@ -92,6 +111,40 @@
       background-color: #28a428;
     }
 
+    .soumission-btn {
+      display: inline-block;
+      background-color: #66ff66;
+      color: #000;
+      padding: 14px 30px;
+      margin-top: 30px;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .soumission-btn:hover {
+      background-color: #33cc33;
+    }
+
+    .services ul {
+      list-style: none;
+      padding: 0;
+      margin: 30px auto;
+      max-width: 600px;
+      text-align: left;
+      color: #f0f0f0;
+    }
+
+    .services li {
+      background-color: #1a1a1a;
+      padding: 12px 16px;
+      margin: 10px 0;
+      border-left: 5px solid #33cc33;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
     .map iframe {
       width: 100%;
       max-width: 600px;
@@ -124,10 +177,13 @@
 </head>
 <body>
 
+  <div class="topbar">
+    📞 <a href="tel:5147044682">514-704-4682</a> – Les Gazons LG
+  </div>
+
   <header>
     <img src="logo gazons logo.png" alt="Logo Les Gazons LG">
     <h1>Les Gazons LG</h1>
-    <h2>📞 514-704-4682</h2>
   </header>
 
   <h3>Contactez-nous</h3>
@@ -139,9 +195,29 @@
     <button type="submit">Envoyer</button>
   </form>
 
+  <a href="mailto:lesgazonslg@hotmail.com?subject=Demande de soumission gratuite" class="soumission-btn">
+    ✉️ Demande de soumission gratuite
+  </a>
+
   <div class="social-buttons">
     <a href="https://www.facebook.com/share/p/1FW1lppSGj/?mibextid=wxdk1f" target="_blank">👍 Aimer sur Facebook</a>
     <a href="https://www.facebook.com/share/p/1FW1lppSGj/?mibextid=wxdk1f" target="_blank">➡️ Suivre sur Facebook</a>
+  </div>
+
+  <h2>Nos Services</h2>
+  <div class="services">
+    <ul>
+      <li>🟢 Tonte de pelouse résidentielle et commerciale</li>
+      <li>🟢 Taille de haies et arbustes</li>
+      <li>🟢 Ramassage de feuilles et nettoyage de terrain</li>
+      <li>🟢 Soufflage de débris sur pavé, trottoirs et stationnements</li>
+      <li>🟢 Ramassage de débris / Junk Removal</li>
+      <li>🟢 Nettoyage haute pression de pavé uni</li>
+      <li>🟢 Application de scellant pour pavé uni</li>
+      <li>🟢 Entretien régulier ou à la demande</li>
+      <li>🟢 Ouverture et fermeture de terrain</li>
+      <li>🟢 Soumission gratuite à domicile</li>
+    </ul>
   </div>
 
     <h2>Nos Réalisations</h2>
@@ -153,7 +229,19 @@
     <img src="image13.jpeg" alt="Réalisation 9">
   </div>
 
-  <h3>Salaberry-de-Valleyfield et Environ</h3>
+  <h3>Nous localiser à Salaberry-de-Valleyfield</h3>
   <div class="map">
     <iframe 
-   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27765.40183201244!2d-74.13914130000001!3d45.2503656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27765.40183201244!2d-74.13914130000001!3d45.2503656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cccfab3fef467ff%3A0x15de3f60fd16a1f7!2sSalaberry-de-Valleyfield%2C%20QC!5e0!3m2!1sfr!2sca!4v1722100000000" 
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Les Gazons LG. Tous droits réservés.</p>
+  </footer>
+
+</body>
+</html>
